@@ -1,0 +1,25 @@
+<!-- Nav Bar -->
+
+<div class="container py-4">
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center pb-0 mb-4">
+            <a routerLink="/" class="d-flex align-items-center text-dark text-decoration-none">
+                <h1 style="color: rgb(255, 255, 255);font-weight: 500;">R U S H I &nbsp;.</h1>
+            </a>
+
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="me-3 py-2 text-light text-decoration-none hover-underline-animation"
+                    routerLinkActive="hover-underline-animation" routerLink="/" style="color: rgb(255, 255, 255);font-size: 18px;">HOME</a>
+
+                <a class="me-3 py-2 text-light text-decoration-none hover-underline-animation"
+                    [routerLinkActive]="['hover-underline-animation']" routerLink="/" style="color: rgb(255, 255, 255);font-size: 18px;">ABOUT</a>
+
+                <a class="me-3 py-2 text-light text-decoration-none hover-underline-animation"
+                    [routerLinkActive]="['hover-underline-animation']" routerLink="/" style="color: rgb(255, 255, 255);font-size: 18px;">PROJECTS</a>
+
+            </nav>
+        </div>
+    </header>
+</div>
+
+<!-- End Nav Bar -->
