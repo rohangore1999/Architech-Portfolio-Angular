@@ -10,12 +10,14 @@ import {MatIconModule} from '@angular/material/icon';
 import { NavbarComponent } from './Mycomponents/navbar/navbar.component';
 import { HomeComponent } from './Mycomponents/home/home.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { TestimonialsComponent } from './Mycomponents/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,

@@ -649,6 +649,7 @@ animation-name: fadeInLeft;
 
   }
   
+  
   @media (max-width: 362px){
     .boom-text {
         font-size: 0.5em;
