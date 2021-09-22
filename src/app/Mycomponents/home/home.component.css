@@ -535,7 +535,16 @@ animation-name: fadeInLeft;
 
 /* SLIDER */
 
+.mat-vertical-stepper-header {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  width: 100%;
+}
 
+.sizes{
+  height: 500px;
+}
 
 /* MEDIA QUERY */
 @media (max-width:425px) {

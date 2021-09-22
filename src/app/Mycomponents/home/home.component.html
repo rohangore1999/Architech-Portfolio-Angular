@@ -280,7 +280,82 @@
     </mat-accordion>
 </div>
 
+
 <!-- What do we offer -->
+<div class="container">
+    <h2 class="pb-2 text-center py-5">OUR PROCESS</h2>
+    <mat-vertical-stepper style="height: 721px;">
+
+        <mat-step class="sizes" state="chat">
+            <ng-template matStepLabel>Take an Appointment</ng-template>
+            <p>Fill the Appointment Form</p>
+            <button mat-button matStepperNext>Next</button>
+            <button mat-button>Form</button>
+        </mat-step>
+        <mat-step style="height: 68px;" state="phone">
+            <ng-template matStepLabel>Design starts</ng-template>
+            <p>Let's get to know you better and get an interior cost estimation from our top interior designers in
+                Bangalore.</p>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+        </mat-step>
+        <mat-step style="height: 68px;" state="lightbulb">
+            <ng-template matStepLabel>Execution Phase</ng-template>
+            <p>Execution of your dream home design begins! All you need to do is wait and watch until the magic happens!
+            </p>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+        </mat-step>
+        <mat-step style="height: 68px;" state="thumb_up">
+            <ng-template matStepLabel>Installation phase </ng-template>
+            <p>From delivery of orders on-site to installation and completion of the home interiors, all of it is done
+                in no time!</p>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+        </mat-step>
+        <mat-step style="height: 68px;" state="favorite_border">
+            <ng-template matStepLabel>Move In!</ng-template>
+            <p>Your dream home is now all ready and set for you to move in!</p>
+            <button mat-button matStepperPrevious>Back</button>
+        </mat-step>
+
+        <!-- Icon overrides. -->
+        <ng-template matStepperIcon="phone">
+            <mat-icon>call_end</mat-icon>
+        </ng-template>
+        <ng-template matStepperIcon="chat">
+            <mat-icon>forum</mat-icon>
+        </ng-template>
+    </mat-vertical-stepper>
+
+
+
+    <!-- Icon overrides. -->
+    <ng-template matStepperIcon="phone">
+        <mat-icon>call_end</mat-icon>
+    </ng-template>
+
+    <ng-template matStepperIcon="chat">
+        <mat-icon>forum</mat-icon>
+    </ng-template>
+
+    <ng-template matStepperIcon="favorite_border">
+        <mat-icon>favorite border</mat-icon>
+    </ng-template>
+
+    <ng-template matStepperIcon="thumb_up">
+        <mat-icon>thumb up</mat-icon>
+    </ng-template>
+
+    <ng-template matStepperIcon="lightbulb">
+        <mat-icon>lightbulb</mat-icon>
+    </ng-template>
+
+</div>
+<!-- What do we offer -->
+
+<!-- Testimonials -->
 <div style="padding-bottom: 5%;">
     <app-testimonials></app-testimonials>
 </div>
+<!-- Testimonials -->

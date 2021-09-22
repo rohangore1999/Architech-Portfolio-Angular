@@ -17,6 +17,7 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatInputModule } from '@angular/material/input';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MatInputModule } from '@angular/material/input';
     MatSnackBarModule,
     FormsModule,
     ReactiveFormsModule,
-    MatInputModule
+    MatInputModule,
+    MatStepperModule
 
   ],
   providers: [],
