@@ -138,6 +138,7 @@ animation-name: fadeInLeft;
   margin-top:-10%
 }
 
+
 .showcase{
   overflow: hidden;
   color: #fff;
@@ -535,15 +536,16 @@ animation-name: fadeInLeft;
 
 /* SLIDER */
 
-.mat-vertical-stepper-header {
+.mat-horizontal-content-container{
+  height: 100%;
+}
+.mat-horizontal-stepper-content{
+  height: 100%;
   display: flex;
-  align-items: center;
-  height: 68px;
-  width: 100%;
 }
 
-.sizes{
-  height: 500px;
+.mat-step-header::after, .mat-step-header::before, .mat-stepper-horizontal-line {
+  top: 42px !important;
 }
 
 /* MEDIA QUERY */

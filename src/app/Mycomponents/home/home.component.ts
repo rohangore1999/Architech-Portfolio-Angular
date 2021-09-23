@@ -2,6 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { animate, query, stagger, style, transition, trigger } from '@angular/animations';
 import {MatAccordion} from '@angular/material/expansion';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { AptFormComponent } from '../apt-form/apt-form.component';
 
 @Component({
   selector: 'app-home',
@@ -32,9 +34,13 @@ import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 export class HomeComponent implements OnInit {
   @ViewChild(MatAccordion) accordion: MatAccordion;
   
-  constructor() { }
+  constructor(private bottomSheet: MatBottomSheet) { }
 
   ngOnInit(): void {
+  }
+
+  openBottomSheet() {
+    this.bottomSheet.open(AptFormComponent)
   }
 
 }

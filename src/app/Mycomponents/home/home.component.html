@@ -282,65 +282,89 @@
 
 
 <!-- What do we offer -->
+<h2 class="pb-2 text-center py-5">OUR PROCESS</h2>
 <div class="container">
-    <h2 class="pb-2 text-center py-5">OUR PROCESS</h2>
-    <mat-vertical-stepper style="height: 721px;">
+    <mat-vertical-stepper style="height: 500px; margin-bottom: 10%;">
 
-        <mat-step class="sizes" state="chat">
-            <ng-template matStepLabel>Take an Appointment</ng-template>
-            <p>Fill the Appointment Form</p>
-            <button mat-button matStepperNext>Next</button>
-            <button mat-button>Form</button>
+        <mat-step state="note_alt">
+            <ng-template matStepLabel>
+                <h1 style="font-weight: 500; margin-top: 15px; color: rgb(0, 0, 0);">Take an Appointment</h1>
+            </ng-template>
+            <h2 style="font-weight: 300;">Fill the Appointment Form</h2>
+            <button mat-button matStepperNext>
+                <h2 style="font-weight: 200;">Next</h2>
+            </button>
+            <button mat-button (click)="openBottomSheet()">
+                <h2 style="font-weight: 200;">Form</h2>
+            </button>
         </mat-step>
-        <mat-step style="height: 68px;" state="phone">
-            <ng-template matStepLabel>Design starts</ng-template>
-            <p>Let's get to know you better and get an interior cost estimation from our top interior designers in
-                Bangalore.</p>
-            <button mat-button matStepperPrevious>Back</button>
-            <button mat-button matStepperNext>Next</button>
+        <mat-step state="brush">
+            <ng-template matStepLabel>
+                <h1 style="font-weight: 500; margin-top: 15px;color: rgb(0, 0, 0);">Design starts</h1>
+            </ng-template>
+            <h2 style="font-weight: 300;">Let's get to know you better and get an interior cost estimation from our
+                top interior designers in
+                Bangalore.</h2>
+            <button mat-button matStepperPrevious>
+                <h2 style="font-weight: 200;">Back</h2>
+            </button>
+            <button mat-button matStepperNext>
+                <h2 style="font-weight: 200;">Next</h2>
+            </button>
         </mat-step>
-        <mat-step style="height: 68px;" state="lightbulb">
-            <ng-template matStepLabel>Execution Phase</ng-template>
-            <p>Execution of your dream home design begins! All you need to do is wait and watch until the magic happens!
-            </p>
-            <button mat-button matStepperPrevious>Back</button>
-            <button mat-button matStepperNext>Next</button>
+        <mat-step state="lightbulb">
+            <ng-template matStepLabel>
+                <h1 style="font-weight: 500;margin-top: 15px;color: rgb(0, 0, 0);">Execution Phase</h1>
+            </ng-template>
+            <h2 style="font-weight: 300;">Execution of your dream home design begins! All you need to do is wait and
+                watch until the magic happens!
+            </h2>
+            <button mat-button matStepperPrevious>
+                <h2 style="font-weight: 200;">Back</h2>
+            </button>
+            <button mat-button matStepperNext>
+                <h2 style="font-weight: 200;">Next</h2>
+            </button>
         </mat-step>
-        <mat-step style="height: 68px;" state="thumb_up">
-            <ng-template matStepLabel>Installation phase </ng-template>
-            <p>From delivery of orders on-site to installation and completion of the home interiors, all of it is done
-                in no time!</p>
-            <button mat-button matStepperPrevious>Back</button>
-            <button mat-button matStepperNext>Next</button>
+        <mat-step state="construction">
+            <ng-template matStepLabel>
+                <h1 style="font-weight: 500;margin-top: 15px;color: rgb(0, 0, 0);">Installation phase</h1>
+            </ng-template>
+            <h2 style="font-weight: 300;">From delivery of orders on-site to installation and completion of the home
+                interiors, all of it is done
+                in no time!</h2>
+            <button mat-button matStepperPrevious>
+                <h2 style="font-weight: 200;">Back</h2>
+            </button>
+            <button mat-button matStepperNext>
+                <h2 style="font-weight: 200;">Next</h2>
+            </button>
         </mat-step>
-        <mat-step style="height: 68px;" state="favorite_border">
-            <ng-template matStepLabel>Move In!</ng-template>
-            <p>Your dream home is now all ready and set for you to move in!</p>
-            <button mat-button matStepperPrevious>Back</button>
+        <mat-step state="check_circle">
+            <ng-template matStepLabel>
+                <h1 style="font-weight: 500;margin-top: 15px;color: rgb(0, 0, 0);">Move In!</h1>
+            </ng-template>
+            <h2 style="font-weight: 300;">Your dream home is now all ready and set for you to move in!</h2>
+            <button mat-button matStepperPrevious>
+                <h2 style="font-weight: 200;">Back</h2>
+            </button>
         </mat-step>
 
-        <!-- Icon overrides. -->
-        <ng-template matStepperIcon="phone">
-            <mat-icon>call_end</mat-icon>
-        </ng-template>
-        <ng-template matStepperIcon="chat">
-            <mat-icon>forum</mat-icon>
-        </ng-template>
     </mat-vertical-stepper>
 
 
 
     <!-- Icon overrides. -->
-    <ng-template matStepperIcon="phone">
-        <mat-icon>call_end</mat-icon>
+    <ng-template matStepperIcon="note_alt">
+        <mat-icon>note_alt</mat-icon>
     </ng-template>
 
-    <ng-template matStepperIcon="chat">
-        <mat-icon>forum</mat-icon>
+    <ng-template matStepperIcon="brush">
+        <mat-icon>brush</mat-icon>
     </ng-template>
 
-    <ng-template matStepperIcon="favorite_border">
-        <mat-icon>favorite border</mat-icon>
+    <ng-template matStepperIcon="construction">
+        <mat-icon>construction border</mat-icon>
     </ng-template>
 
     <ng-template matStepperIcon="thumb_up">
@@ -351,7 +375,12 @@
         <mat-icon>lightbulb</mat-icon>
     </ng-template>
 
+    <ng-template matStepperIcon="check_circle">
+        <mat-icon>check_circle</mat-icon>
+    </ng-template>
+
 </div>
+
 <!-- What do we offer -->
 
 <!-- Testimonials -->
